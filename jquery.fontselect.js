@@ -264,6 +264,14 @@
         
         $('span', this.$select).click(__bind(this.toggleDrop, this));
         this.$arrow.click(__bind(this.toggleDrop, this));
+        
+        // Close dropdown automatically on clicks outside dropdown
+        var self = this;
+        $(document).click(function(event){
+          if(self.active && event.target.id != 'fontSelect-'+ self.$original.context.id){
+            self.toggleDrop();
+          }
+        });
       };
       
       Fontselect.prototype.toggleDrop = function(ev){
@@ -325,7 +333,7 @@
         this.$original.empty().hide();
         this.$element = $('<div>', {'class': this.options.style});
         this.$arrow = $('<div><b></b></div>');
-        this.$select = $('<a><span>'+ this.options.placeholder +'</span></a>');
+        this.$select = $('<a><span id="fontSelect-'+ this.$original.context.id +'">'+ this.options.placeholder +'</span></a>');
         this.$drop = $('<div>', {'class': 'fs-drop'});
         this.$results = $('<ul>', {'class': 'fs-results'});
         this.$original.after(this.$element.append(this.$select.append(this.$arrow)).append(this.$drop));
