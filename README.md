@@ -4,6 +4,7 @@ A font selector to choose from fonts available as part of the Google Web Fonts a
 
 Let users easily select and preview a font from Google's large range of free fonts.
 
+# [Demo](https://seanvm.github.io/fontselect-jquery-plugin/)
 
 ## Documentation
 
@@ -54,4 +55,8 @@ This plugin is released under the MIT license. It is simple and easy to understa
 ## Download
 
 Releases are available for download from
-[GitHub](http://github.com/tommoor/fontselect-jquery-plugin/downloads).
+[GitHub](https://github.com/seanvm/fontselect-jquery-plugin/releases).
+
+Alternatively, you can download and install via NPM
+
+`npm i fontselect-jquery-plugin` - https://www.npmjs.com/package/fontselect-jquery-plugin
