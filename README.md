@@ -45,6 +45,8 @@ An example is included to show how this could be used to update the font on the 
 
 ## License / Credits
 
+This is a continuation of the now-unmaintained [Fontselect jQuery plugin](https://github.com/tommoor/fontselect-jquery-plugin) by [Tom Moor](https://github.com/tommoor).
+
 This plugin is released under the MIT license. It is simple and easy to understand and places almost no restrictions on what you can do with the code.
 [More Information](http://en.wikipedia.org/wiki/MIT_License)
 
