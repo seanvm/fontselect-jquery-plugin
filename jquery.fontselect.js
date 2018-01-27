@@ -259,7 +259,7 @@
         var self = this;
         // Close dropdown automatically on clicks outside dropdown
         $(document).click(function(event){
-          if(self.active && !$(event.target).parents('#fontSelect-'+ self.$original.context.id).length){
+          if(self.active && !$(event.target).parents('#fontSelect-'+ self.$original.id).length){
             self.toggleDrop();
           }
         });
@@ -330,7 +330,7 @@
       Fontselect.prototype.setupHtml = function(){
       
         this.$original.empty().hide();
-        this.$element = $('<div>', {'id': 'fontSelect-'+this.$original.context.id, 'class': this.options.style});
+        this.$element = $('<div>', {'id': 'fontSelect-'+this.$original.id, 'class': this.options.style});
         this.$arrow = $('<div><b></b></div>');
         this.$select = $('<a><span>'+ this.options.placeholder +'</span></a>');
         this.$drop = $('<div>', {'class': 'fs-drop'});

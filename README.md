@@ -12,7 +12,7 @@ To create a font selector simply run the plugin on a standard html input element
 
 ### How to use
 
-        $('input.fonts').fontselect();
+    $('input.fonts').fontselect();
 
 ### Options
 
@@ -22,25 +22,25 @@ Fontselect has one argument, an options object that you might want to customise:
 * placeholder: text to use when no font is selected yet
 * lookahead: a number of fonts to try and preload ahead in the select box
 
-        $('input.fonts').fontselect({
-          style: 'font-select',
-          placeholder: 'Select a font',
-          lookahead: 2
-        });
-           
+    $('input.fonts').fontselect({
+      style: 'font-select',
+      placeholder: 'Select a font',
+      lookahead: 2
+    });
+
 ### Events
 
 Fontselect triggers the change event on the original element when a font is selected. 
 An example is included to show how this could be used to update the font on the current page.
 
-        $('input.fonts').fontselect().change(function(){
-        
-          // replace + signs with spaces for css
-          var font = $(this).val().replace(/\+/g, ' ');
-          
-          // log font name
-          console.log(font);
-        });
+    $('input.fonts').fontselect().change(function(){
+    
+      // replace + signs with spaces for css
+      var font = $(this).val().replace(/\+/g, ' ');
+      
+      // log font name
+      console.log(font);
+    });
 
 
 
