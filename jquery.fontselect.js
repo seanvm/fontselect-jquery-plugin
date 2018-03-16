@@ -390,7 +390,7 @@
       
       Fontselect.prototype.addFontLink = function(font){
       
-        var link = this.options.api + font;
+        var link = this.options.api + font + '&text=' + font;
       
         if ($("link[href*='" + font + "']").length === 0){
 			$('link:last').after('<link href="' + link + '" rel="stylesheet" type="text/css">');
