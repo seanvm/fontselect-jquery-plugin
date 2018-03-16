@@ -279,7 +279,6 @@
           this.$element.removeClass('font-select-active');
           this.$drop.hide();
           clearInterval(this.visibleInterval);
-          
         } else {
           this.$element.addClass('font-select-active');
           this.$drop.show();
@@ -307,8 +306,8 @@
         } else {
           $li = $("li", this.$results).first();
         }
-
-        this.$results.scrollTop($li.addClass('active').position().top);
+        
+        this.$results.scrollTop($li.addClass('active')[0].offsetTop);
       };
       
       Fontselect.prototype.activateFont = function(ev){
