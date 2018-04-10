@@ -399,7 +399,7 @@
       return Fontselect;
     })();
 
-    return this.each(function(options) {        
+    return this.each(function() {        
       // If options exist, lets merge them
       if (options) $.extend( settings, options );
       
