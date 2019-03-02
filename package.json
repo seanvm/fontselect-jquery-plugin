@@ -1,6 +1,6 @@
 {
   "name": "fontselect-jquery-plugin",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "A jQuery font selector for Google Web Fonts",
   "main": "jquery.fontselect.js",
   "directories": {

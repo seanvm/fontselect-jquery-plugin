@@ -21,12 +21,14 @@ Fontselect has one argument, an options object that you might want to customise:
 * style: the class to give the new font selector
 * placeholder: text to use when no font is selected yet
 * lookahead: a number of fonts to try and preload ahead in the select box
+* fonts: an array of fonts to display instead of the defaults.
 
-    $('input.fonts').fontselect({
-      style: 'font-select',
-      placeholder: 'Select a font',
-      lookahead: 2
-    });
+      $('input.fonts').fontselect({
+          style: 'font-select',
+          placeholder: 'Select a font',
+          lookahead: 2,
+          fonts: ["Aclonica","Amaranth","Bevan","Zeyada"]
+        });
 
 ### Events
 
